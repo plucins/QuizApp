@@ -3,4 +3,5 @@
     <string name="mainText">Quiz</string>
     <string name="start_quizButton">Start Quiz</string>
     <string name="init_highscore">Highscore: 0</string>
+    <string name="start_chartButton">Wykresy</string>
 </resources>

@@ -20,11 +20,25 @@ public class StartingScreenActivity extends AppCompatActivity {
                 startQuiz();
             }
         });
+
+        Button buttonStartChart = findViewById(R.id.button_start_chart);
+        buttonStartChart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startChart();
+            }
+        });
+
     }
 
 
     private void startQuiz() {
         Intent intent = new Intent(StartingScreenActivity.this, QuizActivity.class);
+        startActivity(intent);
+    }
+
+    private void startChart() {
+        Intent intent = new Intent(StartingScreenActivity.this, ChartActivity.class);
         startActivity(intent);
     }
 }
